@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,8 +10,9 @@
 <body>
   <div class="app-wrap">
     <header>
-      <input type="text" autocomplete="on" class="search-box" 
+      <input type="text" autocomplete="on" class="inputValue" 
       placeholder="Search for a city..." />
+      <input type="submit" value="Submit">
     </header>
     <main>
       <section class="location">
@@ -26,5 +27,39 @@
     </main>
   </div>
   <script src="main.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OpenWeatherMap Api</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div class="main">
+    <div class="header">
+      <h1>OpenWeatherMap API</h1>
+      <p>Enter any city name in the input box below to get the data</p>
+    </div> -->
+  
+    <div class="input">
+      <input type="text" placeholder="Enter the city" class="inputValue">
+      <input type="submit" value="Submit" class="button">
+    </div>
+  </div>
+
+  <div class="display">
+    
+      <h1 class="name" id="name"></h1>
+      <p class="temp" style="text-align: center; color:white;font-size:90px"></p>
+      <p class="clouds" style="text-align: center; color:white"></p>
+      <p class="desc" style="text-align:center; color:white; font-size: 30px;"></p>
+    </div>
+  </div>
+<script src="weather.js"></script>
 </body>
 </html>
